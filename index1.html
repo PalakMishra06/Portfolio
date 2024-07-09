@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palak Mishra</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css 1" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">PALAK MISHRA</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#experience">experience</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">PALAK</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">experience</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src=".\assets\profile pic.png" alt="Palak Mishra profile picture" class="profile-pic" />
+    </div>
+    <div class="section__text">
+      <p class="section_text_p1">Hello👋, I'm</p>
+      <h1 class="title"><span class="auto-type"></span></h1>
+      <p class="section_text_p2"></p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/Palak Mishra resume.pdf')">
+          Resume
+        </button>
+
+      </div>
+      <div id="socials-container">
+        <img src=".\assets\linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/palakmishra632001/' " />
+        <img src=".\assets\github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/PalakMishra06/' " />
+        <img src=".\assets\leetcode.png" alt="My Leetcode profile" class="icon"
+          onclick="location.href='https://leetcode.com/u/Palakmishra06/' " />
+
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <script>
+    var typed = new Typed(".auto-type", {
+      strings: ['Palak Mishra', 'Web Developer.', 'Programmer.', 'Blogger.'],
+      typeSpeed: 180,
+      backSpeed: 150,
+      loop: true
+    })
+  </script>
+  <!-- about section -->
+  <section id="about">
+
+    <h1 class="title">Get To know more About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src=".\assets\about pic.png" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+
+
+            <div class="details-container">
+              <img src=".\assets\education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>B.sc (Mathematics)<br />MCA (Master of Computer Application)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hi there! I'm Palak Mishra, a web developer and Python lover with over 2 years . I'm pretty good with C,
+              C++, and Python programming language, crafting solutions that make a difference. Outside of coding, I
+              enjoy to sing,reading good stories. Becoming a top-notch software engineer and making cool stuff online.
+            </p>
+          </div>
+        </div>
+      </div>
+
+  </section>
+  <!-- experience section -->
+  <section id="experience">
+
+    <h1 class="title">Explore My Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Programming Language</h2>
+          <div class="article-container">
+            <article>
+
+
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML & CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JQuery</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>C & C++</h3>
+                <p>Advanced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+                <p>Advanced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Java</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>PHP</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>SQL </h3>
+                <p>Essential</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Tools and Technology</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Power BI</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git & Github</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Django F.W.</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>MongoDB</h3>
+                <p>Essential</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>MS Office</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Canva</h3>
+                <p>Intermediate</p>
+              </div>
+          </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>A.I. & M.L.</h3>
+              <p>Learning</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>API</h3>
+              <p>Essential</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- project section -->
+  <section id="projects">
+
+    <h1 class="title">Browse My Recent Project</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+          </div>
+          <h3 class="experience-sub title project-title">M.R.S.</h3>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/PalakMishra06/Disease-Prediction-and-Medicine-Recommendation' ">
+              Github
+            </button>
+            <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/PalakMishra06/Disease-Prediction-and-Medicine-Recommendation' "
+              >
+                Live Demo
+              </button> -->
+          </div>
+        </div>
+
+
+        <img src=".\assets\arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#Contact'" />
+  </section>
+  <section id="contact">
+
+    <h1 class="title">Get in Touch to Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src=".\assets\email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:palakmishra632001@gmail.com">palakmishra632001@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src=".\assets\linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/palakmishra632001">LinkedIn</a></p>
+      </div>
+
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#experience">experience</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Palak mishra. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
