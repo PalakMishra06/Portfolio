@@ -39,7 +39,7 @@ export default function Contact() {
     title: {
       fontSize: "2.5rem",
       marginBottom: "2rem",
-      borderBottom: "2px solid #ccc",
+      borderBottom: "2px solid gray",
       display: "inline-block",
       paddingBottom: "0.5rem",
     },
@@ -98,8 +98,8 @@ export default function Contact() {
       backgroundColor: "#303f9f",
     },
     footer: {
-      marginTop: "4rem",
-      padding: "2rem",
+      marginTop: "2rem",
+      padding: "2rem 1rem",
       backgroundColor: "#2c3e50",
       color: "#fff",
       textAlign: "center",

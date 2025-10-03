@@ -72,7 +72,7 @@ export default function Navbar() {
     },
   };
 
-  const links = ["Home", "About", "Projects", "Skills", "Contact"];
+  const links = ["Home", "About", "Skills", "Projects", "Contact"];
 
   return (
     <>

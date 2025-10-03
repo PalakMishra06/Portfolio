@@ -14,8 +14,9 @@ export default function About() {
     <>
       <style>{`
         .about-section {
-          padding: 2rem 1rem;
-          background-color: #fdfefe;
+          padding: 3rem 1px;
+          
+      
           color: #333;
           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
@@ -24,8 +25,8 @@ export default function About() {
           text-align: center;
           font-size: 2rem;
           margin-bottom: 1.5rem;
-          color: #2c3e50;
-          border-bottom: 2px solid #ddd;
+          color:rgb(40, 60, 80);
+          border-bottom: 2px solid black;
           padding-bottom: 0.5rem;
         }
 
@@ -40,6 +41,7 @@ export default function About() {
           display: flex;
           flex-direction: ${isMobile ? "column" : "row"};
           justify-content: center;
+         
           align-items: flex-start;
           gap: 1.5rem;
         }
@@ -47,7 +49,7 @@ export default function About() {
         .about-image {
           max-width: 280px;
           width: 90%;
-          border-radius: 20px;
+          border-radius: 100%;
           box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
           margin: 0 auto;
         }
@@ -55,10 +57,12 @@ export default function About() {
         .about-info {
           background-color: #ffffff;
           padding: 1.5rem;
-          border-radius: 12px;
+          border-radius:  12px;
+           border:2px solid black;
           box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
           max-width: 500px;
           margin: 0 auto;
+          
         }
 
         .about-role {
@@ -77,6 +81,7 @@ export default function About() {
           text-align: center;
           border-bottom: 1px solid #ddd;
           padding-bottom: 0.5rem;
+           border-bottom: 2px solid black;
         }
 
         .about-info-item {

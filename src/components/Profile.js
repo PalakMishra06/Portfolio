@@ -26,8 +26,6 @@ export default function Profile() {
       flexWrap: "wrap",
       alignItems: "center",
       justifyContent: "center",
-      padding: "4rem 2rem",
-      background: "#fff",
       color: "#2c3e50",
       textAlign: "center",
       fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",

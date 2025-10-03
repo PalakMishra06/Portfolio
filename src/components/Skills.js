@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 
 const skills = [
-  { name: "Java", level: 92, logo: "🧑‍💻" },
-  { name: "SpringBoot", level: 80, logo: "🌱" },
-  { name: "HTML", level: 99, logo: "📄" },
-  { name: "CSS", level: 90, logo: "🎨" },
-  { name: "React JS", level: 90, logo: "⚛️" },
-  { name: "MySQL", level: 90, logo: "💾" },
-  { name: "JavaScript", level: 85, logo: "📜" },
-  { name: "Hibernate", level: 80, logo: "📘" },
-  { name: "Angular", level: 75, logo: "🅰️" },
-  { name: "Spring", level: 70, logo: "🌿" },
-  { name: "Mongo DB", level: 65, logo: "🍃" },
-  { name: "Oracle", level: 60, logo: "📀" },
+  { name: "Java", level: 92, logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+  { name: "Spring Boot", level: 80, logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" },
+  { name: "HTML", level: 99, logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+  { name: "CSS", level: 90, logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+  { name: "React JS", level: 90, logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  { name: "MySQL", level: 90, logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+  { name: "JavaScript", level: 85, logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+  { name: "Hibernate", level: 80, logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-plain.svg" },
+  { name: "Angular", level: 75, logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" },
+  { name: "Spring", level: 70, logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" },
+  { name: "MongoDB", level: 65, logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+  { name: "Oracle", level: 60, logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" },
 ];
 
 const circleRadius = 30;
@@ -46,15 +46,15 @@ const Skills = () => {
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
-              <div
+              <img
+                src={skill.logo}
+                alt={`${skill.name} logo`}
                 style={{
                   ...styles.logo,
-                  transform: isHovered ? "scale(1.3)" : "scale(1)",
+                  transform: isHovered ? "scale(1.2)" : "scale(1)",
                   transition: "transform 0.3s ease",
                 }}
-              >
-                {skill.logo}
-              </div>
+              />
 
               <svg width="80" height="80">
                 <circle
@@ -76,7 +76,9 @@ const Skills = () => {
                   strokeDashoffset={circumference - progress}
                   strokeLinecap="round"
                   transform="rotate(-90 40 40)"
-                  style={{ transition: "stroke-dashoffset 0.5s ease, stroke 0.3s" }}
+                  style={{
+                    transition: "stroke-dashoffset 0.5s ease, stroke 0.3s",
+                  }}
                 />
                 <text
                   x="50%"
@@ -108,10 +110,11 @@ const Skills = () => {
 
 const styles = {
   section: {
-    padding: "3rem 1rem",
+    padding: "50px 1px",
     textAlign: "center",
+ 
     fontFamily: "'Segoe UI', sans-serif",
-    background: "linear-gradient(to right, #fdfbfb, #ebedee)",
+   
     minHeight: "100vh",
   },
   title: {
@@ -144,7 +147,8 @@ const styles = {
     transition: "transform 0.3s ease, box-shadow 0.3s ease",
   },
   logo: {
-    fontSize: "1.5rem",
+    width: "30px",
+    height: "30px",
     marginBottom: "0.5rem",
   },
   skillName: {
